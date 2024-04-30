@@ -1,0 +1,87 @@
+body{
+    background-image:linear-gradient(#3b4868,#026081, #1A1A2A, #6f768e, #bbbace);
+
+ }
+
+
+
+
+html::-webkit-scrollbar-thumb{
+background:#3b4868;
+}
+html::-webkit-scrollbar-track{
+    background:transparent;
+    border-radius:10px;
+}
+html::webkit-scrollbar{
+    width:10px;
+    height:100px;
+}
+
+.navbar{
+    background-color:#3b4868;
+    position: fixed;
+    
+}
+.navbar-nav-a{
+    font-family: "antiquarian", sans-serif;
+    font-size:18px;
+    text-transform:uppercase;
+    font-weight:bold;
+}
+.navbar-brand{
+    margin-left:3%;
+}
+.navbar-light .navbar-brand{
+    color:#bbbace;
+    font-size:25px;
+    text-transform:uppercase;
+    font-weight:bold;
+    letter-spacing:2px;
+    font-family: "antiquarian-scribe", sans-serif;
+}
+.navbar-light .navbar-nav .nav-link{
+    color:#bbbace;
+    font-weight:bold;
+    font-family: "antiquarian", sans-serif;
+    font-size: 20px;
+}
+.navbar-nav{
+    text-align:center;
+}
+.nav-link{
+    padding:.2rem 1rem;
+    position:relative;
+    display:inline-block;
+}
+.nav-link::after{
+    content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #6f768e;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+.nav-link:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+.w-100{
+    height: 100vh
+}
+@media only screen and (max-width:1000px){
+    .navbar-nav.ms-auto{
+        background:#6f768e;
+    }
+    .navbar-toggler{
+        padding:1px 5px;
+        font-size: 18px;
+        line-height:0.3;
+        background:#bbbace;
+        margin-right:10%;
+    }
+}
