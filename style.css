@@ -272,9 +272,9 @@ h2{
 .row{
     padding:50px;
     /*margin-top:50px;*/
-    background:rgba(65, 55, 39, 0.15);
+    background:#03272c;
 }
-.newton{
+.CPA{
     text-align:center;
     font-family: "antiquarian", sans-serif;
     color:#1A1A2A;
@@ -305,8 +305,8 @@ h2{
     height:38px;
     border:1px;
     border-radius:5px;
-    background: #1A1A2A;
-    color:rgba(204, 21, 49);
+    background: #946D43;
+    color:#022227;
     letter-spacing:2px;
     font-weight:550;
     transition:0.5s ease;
@@ -314,13 +314,13 @@ h2{
     font-family: "antiquarian", sans-serif;
     font-size: 24px;
 }
-.him{
-    color:#1A1A2A;
+.pay{
+    color:#946D43;
     font-family:"antiquarian", sans-serif;
     font-size:2em;
 }
-.Newton{
-    color:#1A1A2A;
+.CPA{
+    color:#946D43;
     font-family: "antiquarian", sans-serif;
     font-size:20px;
 }
@@ -328,7 +328,7 @@ h2{
     width:170px;
 }
 .img2{
-    border:5px solid #1A1A2A;
+    border:5px solid #946D43;
     box-shadow:10px 5px 5px rgba(0, 0, 0, 0.4);
     width:100%;
    
