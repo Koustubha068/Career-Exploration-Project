@@ -1,5 +1,5 @@
 body{
-    background-image:linear-gradient(#3b4868,#026081, #1A1A2A, #6f768e, #bbbace);
+    background-color:#022227;
 
  }
 
@@ -7,7 +7,7 @@ body{
 
 
 html::-webkit-scrollbar-thumb{
-background:#3b4868;
+background:#022227;
 }
 html::-webkit-scrollbar-track{
     background:transparent;
@@ -19,13 +19,13 @@ html::webkit-scrollbar{
 }
 
 .navbar{
-    background-color:#3b4868;
+    background-color:#022227;
     position: fixed;
     
 }
 .navbar-nav-a{
     font-family: "antiquarian", sans-serif;
-    font-size:18px;
+    font-size:75px;
     text-transform:uppercase;
     font-weight:bold;
 }
@@ -33,7 +33,7 @@ html::webkit-scrollbar{
     margin-left:3%;
 }
 .navbar-light .navbar-brand{
-    color:#bbbace;
+    color:#946D43;
     font-size:25px;
     text-transform:uppercase;
     font-weight:bold;
@@ -41,7 +41,7 @@ html::webkit-scrollbar{
     font-family: "antiquarian-scribe", sans-serif;
 }
 .navbar-light .navbar-nav .nav-link{
-    color:#bbbace;
+    color:#946D43;
     font-weight:bold;
     font-family: "antiquarian", sans-serif;
     font-size: 20px;
@@ -62,7 +62,7 @@ html::webkit-scrollbar{
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: #6f768e;
+  background-color: #8f7457;
   transform-origin: bottom right;
   transition: transform 0.25s ease-out;
 }
@@ -75,13 +75,263 @@ html::webkit-scrollbar{
 }
 @media only screen and (max-width:1000px){
     .navbar-nav.ms-auto{
-        background:#6f768e;
+        background:#8f7457;
     }
     .navbar-toggler{
         padding:1px 5px;
         font-size: 18px;
         line-height:0.3;
-        background:#bbbace;
+        background:#022227;
         margin-right:10%;
     }
 }
+#home{
+    width:107%;
+    height:80vh;
+    min-height:50vh;
+    background-attachment: fixed;
+    background-repeat:no-repeat;
+    background-size:cover;
+    display:grid;
+    place-items:center;
+    align-items:center;
+    justify-content:center;
+    background-image:url('CPA3.jpg');
+    background-position:center;
+ 
+
+}
+#home .content{
+  padding-top:-100px;
+ 
+
+
+}
+#home .content h3{
+    font-size:50px;
+    color:#000000;
+    text-align:left;
+    padding-top:-200px;
+    font-family: "antiquarian-scribe", sans-serif;
+    
+    background-color: rgba(255, 255, 255, 0.3);
+}
+#home .content p{
+    margin-top:20px;
+    color:#1A1A2A;
+    padding-top:-200px;
+    font-family: "antiquarian", sans-serif;
+    font-size: 23px;
+    background-color: rgba(255, 255, 255, 0.3);
+
+}
+#btn{
+    width:150px;
+    height:36px;
+    margin-top:20px;
+    background:#946D43;
+    border-radius:5px;
+    font-weight:bold;
+    border:none;
+    transition: 0.5s ease;
+    cursor:pointer;
+    color: #1A1A2A;
+}
+#btn:hover{
+    background-color: #b2b2b4;
+    color:#946D43;
+
+}
+/* end of parrallax section */
+/* start of steps*/
+h1{
+    margin:0.3em;
+    font-size:3em;
+}
+h2{
+    margin-bottom:0.5em;
+}
+.title{
+    text-align:center;
+    color:#946D43;
+    font-size:1em;
+    font-family: "antiquarian-scribe", sans-serif;
+   
+
+}
+.title p{
+    color:#946D43;
+    font-family: "antiquarian", sans-serif;
+    font-size:2em;
+    letter-spacing:2px;
+    font-weight:bold;
+
+}
+.info{
+    color: #946D43;
+}
+.timeline{
+    margin:5em auto;
+    max-width:34.15em;
+}
+.checkpoint{
+    max-width:34em;
+    padding-top:2em;
+    padding-bottom:2em;
+    position:relative;
+    font-family: "antiquarian", sans-serif;
+    font-size:1.25em;
+
+}
+.checkpoint div{
+    border:2px solid #888;
+    border-radius:1em;
+    padding:1.5em;
+    border: 5px solid rgba(148,109,67,0.7);
+    box-shadow: 10px 5px 5px rgba(82, 62, 40, 0.7);
+}
+.checkpoint p{
+    line-height:27px;
+    color:#b2744c;
+}
+.checkpoint:nth-child(odd){
+    border-left:3px solid #888;
+    padding-left:3em;
+    transform:translate(14em);
+}
+.checkpoint:nth-child(even){
+    border-right:3px solid #888;
+    padding-right:3em;
+    transform:translate(-13.20em);
+}
+.checkpoint:nth-child(odd)::before,
+.checkpoint:nth-child(even)::before{
+    content:"";
+    background:#888;
+    width:3em;
+    height:3px;
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%);
+}
+.checkpoint:nth-child(odd)::before{
+    left:0;
+
+}
+.checkpoint:nth-child(even)::before{
+    right:0;
+}
+.checkpoint:nth-child(odd) div::before,
+.checkpoint:nth-child(even) div::before{
+    content:"";
+    background:#fff;
+    box-shadow:0 0 0.5em rgba(148,109,67,0.7);
+    width:0.8em;
+    height:0.8em;
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%);
+    border-radius:50%;
+}
+.checkpoint:nth-child(odd) div::before{
+    left:-0.5em;
+}
+.checkpoint:nth-child(even) div::before{
+    right:-0.5em;
+}
+@media screen and (max-width:1150px){
+    .timeline{
+        width:80vw;
+    }
+    .timeline .checkpoint {
+        width:100%;
+        transform:none;
+        padding-left:0;
+        padding-right:0;
+        border:none;
+    }
+    .timeline .checkpoint::before {
+        width:3px;
+        height:4em;
+        top:-2em;
+        left:50%;
+        transform:translateX(-50%);
+    }
+    .timeline .checkpoint div::before{
+        top:-0.5em;
+        left:50%;
+        transform:translateX(-50%);
+    }
+}
+.img{
+    width:110%;
+}
+
+/*end of steps*/
+/*beg ofpay */
+.row{
+    padding:50px;
+    /*margin-top:50px;*/
+    background:rgba(65, 55, 39, 0.15);
+}
+.newton{
+    text-align:center;
+    font-family: "antiquarian", sans-serif;
+    color:#1A1A2A;
+
+}
+.about{
+    margin-top:50px;
+  
+
+}
+.about .icard{
+    border-radius:10px;
+}
+.about .icard img{
+    border-radius:10px;
+
+}
+.about h2{
+    font-weight:600;
+    font-family: "antiquarian", sans-serif;
+    letter-spacing:0.5px;
+}
+.about p{
+    font-weight:500;
+}
+#about-btn{
+    width:150px;
+    height:38px;
+    border:1px;
+    border-radius:5px;
+    background: #1A1A2A;
+    color:rgba(204, 21, 49);
+    letter-spacing:2px;
+    font-weight:550;
+    transition:0.5s ease;
+    cursor:pointer;
+    font-family: "antiquarian", sans-serif;
+    font-size: 24px;
+}
+.him{
+    color:#1A1A2A;
+    font-family:"antiquarian", sans-serif;
+    font-size:2em;
+}
+.Newton{
+    color:#1A1A2A;
+    font-family: "antiquarian", sans-serif;
+    font-size:20px;
+}
+#about-btn:hover{
+    width:170px;
+}
+.img2{
+    border:5px solid #1A1A2A;
+    box-shadow:10px 5px 5px rgba(0, 0, 0, 0.4);
+    width:100%;
+   
+
+}
+/*end of pay*/
